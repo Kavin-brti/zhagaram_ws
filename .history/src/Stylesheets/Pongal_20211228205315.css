@@ -1,0 +1,5 @@
+@import '~antd/lib/style/themes/default.less';
+.title-pongal{
+    text-align:center;
+    color:@red-6;
+}

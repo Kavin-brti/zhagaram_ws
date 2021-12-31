@@ -1,0 +1,24 @@
+.title-pongal{
+    text-align:center;
+    background-color:#faa627;
+    font-size:24px;
+    font-family: sans-serif;
+}
+.card-item{
+    margin-left:60px;
+    margin-bottom:35px;
+    padding:15px;
+    box-shadow:2px 2px 2px black;
+    display:block;
+}
+.cards{
+    display:inline-flex;
+}
+.btn{
+    margin-left:700px;
+    border:12px;
+
+}
+.ref:hover{
+    color:black;
+}

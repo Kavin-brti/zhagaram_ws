@@ -1,0 +1,26 @@
+.nav-item:hover{
+    color:black;
+    background-color:white;
+}
+a{
+    text-decoration:none;
+    padding:12px;
+}
+li{
+    list-style-type:none;
+    display:inline-block;
+    padding:8px;
+    
+}
+.navbar{
+    margin-left:1050px;
+    margin-top:-40px;
+}
+.nav{
+    padding:8px;
+    background-color:black;
+}
+.dropdown{
+    color:rgb(80, 80, 230);
+    background-color:rgb(0, 0, 0);
+}

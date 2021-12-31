@@ -1,0 +1,21 @@
+.nav-item:hover{
+    color:black;
+    background-color:white;
+}
+a{
+    text-decoration:none;
+    padding:12px;
+}
+li{
+    list-style-type:none;
+    display:inline-block;
+    padding:8px;
+    
+}
+.navbar{
+    margin-left:1050px;
+    margin-top:-40px;
+}
+.nav{
+    background-color:black;
+}

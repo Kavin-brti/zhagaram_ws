@@ -1,0 +1,6 @@
+li:hover a,li:focus{
+    background-color:white;
+}
+li:hover{
+    background-color:white;
+}

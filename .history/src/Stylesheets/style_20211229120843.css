@@ -1,0 +1,18 @@
+.form{
+    border:2px solid black;
+    padding:40px;
+    width:70%;
+    margin:0 auto;
+    background-color:whitesmoke
+}
+.card-content{
+    border:2px solid black;
+    width:18%;
+    padding:12px;
+    margin:0 auto;
+    margin-top:50px;
+    box-shadow: 2px 2px 5px grey;
+}
+.card-data{
+    display:inline-flex;
+}
