@@ -5,17 +5,17 @@ import banner from '../Images/banner.png'
 // import {AiOutlineArrowRight,AiOutlineArrowLeft} from 'react-icons/ai';
 // import {FaArrowAltCircleRight,FaArrowAltCircleLeft} from 'react-icons/fa';
 import {AiOutlineDoubleRight,AiOutlineDoubleLeft} from 'react-icons/ai';
-import image1 from '../Images/IMG_1994.JPG';
-import image2 from '../Images/IMG_1996.JPG';
-import image3 from '../Images/IMG_2004.JPG';
-import image4 from '../Images/IMG_2005.JPG';
-import image5 from '../Images/IMG_2075.JPG';
-import image6 from '../Images/IMG_2076.JPG';
-import image7 from '../Images/IMG_2077.JPG';
+import image1 from '../Images/IMG_1994.jpg';
+import image2 from '../Images/IMG_1996.jpg';
+import image3 from '../Images/IMG_2004.jpg';
+import image4 from '../Images/IMG_2005.jpg';
+import image5 from '../Images/IMG_2075.jpg';
+import image6 from '../Images/IMG_2076.jpg';
+import image7 from '../Images/IMG_2077.jpg';
 const Header = () => {
 
     const [current, setCurrent] = useState(0)
-    const slides=[{image1},{image2},{image3},{image4},{image5},{image6},{image7}];
+    const slides=[{image1},{image2},{image3},{image4},{image5}];
     const length=slides.length;
 
     const nextSlide = () => {
@@ -41,7 +41,7 @@ const Header = () => {
                 <h4 style={{color:"white"}}>{name}</h4>
             </div>
 
-        <section style={{backgroundColor:"#F0FFFF"}} className="slider img-grp">
+        <section className="slider img-grp">
         {/* <AiOutlineArrowLeft className='left-arrow' onClick={prevSlide} />
         <AiOutlineArrowRight className='right-arrow' onClick={nextSlide} /> */}
         <AiOutlineDoubleLeft className='left-arrow' onClick={prevSlide} />

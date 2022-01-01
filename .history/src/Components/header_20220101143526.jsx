@@ -15,7 +15,7 @@ import image7 from '../Images/IMG_2077.JPG';
 const Header = () => {
 
     const [current, setCurrent] = useState(0)
-    const slides=[{image1},{image2},{image3},{image4},{image5},{image6},{image7}];
+    const slides=[{image1},{image2},{image3},{image4},{image5}];
     const length=slides.length;
 
     const nextSlide = () => {
@@ -41,7 +41,7 @@ const Header = () => {
                 <h4 style={{color:"white"}}>{name}</h4>
             </div>
 
-        <section style={{backgroundColor:"#F0FFFF"}} className="slider img-grp">
+        <section className="slider img-grp">
         {/* <AiOutlineArrowLeft className='left-arrow' onClick={prevSlide} />
         <AiOutlineArrowRight className='right-arrow' onClick={nextSlide} /> */}
         <AiOutlineDoubleLeft className='left-arrow' onClick={prevSlide} />

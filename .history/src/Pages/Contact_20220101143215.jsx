@@ -1,8 +1,8 @@
 import React from 'react'
 import { Helmet,HelmetProvider } from 'react-helmet-async';
-import { Form, Input, Button,Select } from 'antd';
+import { Form, Input, Button,Select,Card } from 'antd';
 import '../Stylesheets/style.css'
-
+import img1 from '../Images/banner.png'
 
 
 export default function Contact() { 

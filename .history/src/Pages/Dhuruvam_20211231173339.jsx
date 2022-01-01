@@ -10,12 +10,11 @@ const Dhuruvam=()=> {
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(false);
 
-  
+    const ref = firebase.firestore().collection("Dhuruvam");
   
 
     useEffect(()=>{
           // //ONE TIME GET FUNCTION
-    const ref = firebase.firestore().collection("Dhuruvam");
     function getEvents() {
         setLoading(true);
         ref.onSnapshot((querySnapshot)=>{
@@ -75,7 +74,7 @@ const Dhuruvam=()=> {
                   
                   </Row>
             </div>
-            <Button style={{marginBottom:20}} className="btn" type="danger"><a href="/docs" className="ref"><b>பதிவிற்கு</b></a> </Button>
+            <Button className="btn" type="danger"><a href="/docs" className="ref"><b>பதிவிற்கு</b></a> </Button>
 
         </div>
     )

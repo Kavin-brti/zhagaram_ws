@@ -75,7 +75,7 @@ const Dhuruvam=()=> {
                   
                   </Row>
             </div>
-            <Button style={{marginBottom:20}} className="btn" type="danger"><a href="/docs" className="ref"><b>பதிவிற்கு</b></a> </Button>
+            <Button style={{marginBottom=20}} className="btn" type="danger"><a href="/docs" className="ref"><b>பதிவிற்கு</b></a> </Button>
 
         </div>
     )

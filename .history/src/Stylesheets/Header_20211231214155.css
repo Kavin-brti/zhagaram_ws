@@ -17,9 +17,7 @@
     z-index: 10;
     cursor: pointer;
     user-select: none;
-    margin-top: 850px;
-  
-}
+  }
   
   .left-arrow {
     position: absolute;
@@ -30,7 +28,6 @@
     z-index: 10;
     cursor: pointer;
     user-select: none;
-    margin-top: 850px;
   }
   
   .slide {
@@ -44,13 +41,10 @@
     transform: scale(1.08);
   } 
   .image {
-    width: 1000px;
+    width: 900px;
     height: 600px;
     border-radius: 10px;
-    margin-top: 540px;
-    margin-bottom:80px;
-    margin-left:250px;
-   
+    margin-top: 520px;
   }
 /* .title{
     margin-top:-700px;

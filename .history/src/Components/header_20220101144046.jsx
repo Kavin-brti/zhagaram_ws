@@ -41,7 +41,7 @@ const Header = () => {
                 <h4 style={{color:"white"}}>{name}</h4>
             </div>
 
-        <section style={{backgroundColor:"#F0FFFF"}} className="slider img-grp">
+        <section style={{backgroundColor:"#89CFF0"}} className="slider img-grp">
         {/* <AiOutlineArrowLeft className='left-arrow' onClick={prevSlide} />
         <AiOutlineArrowRight className='right-arrow' onClick={nextSlide} /> */}
         <AiOutlineDoubleLeft className='left-arrow' onClick={prevSlide} />

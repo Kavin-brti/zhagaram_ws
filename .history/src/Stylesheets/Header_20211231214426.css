@@ -44,13 +44,12 @@
     transform: scale(1.08);
   } 
   .image {
-    width: 1000px;
+    width: 900px;
     height: 600px;
     border-radius: 10px;
-    margin-top: 540px;
-    margin-bottom:80px;
-    margin-left:250px;
-   
+    margin-top: 501px;
+    margin-left:300px;
+    margin-bottom:-500px;
   }
 /* .title{
     margin-top:-700px;
