@@ -8,10 +8,9 @@ a{
     padding:12px;
     color:white;
 }
-/* a:hover{
+a:hover{
     color:black;
-} */
-
+}
 li{
     list-style-type:none;
     display:inline-block;

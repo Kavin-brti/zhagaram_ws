@@ -23,3 +23,6 @@
 .ref:hover{
     color:white;
 }
+.poster_title{
+    border-left:2px solid black;
+}

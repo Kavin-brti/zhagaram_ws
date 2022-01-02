@@ -2,7 +2,7 @@ import React , {useState,useEffect} from 'react'
 import { Helmet,HelmetProvider } from 'react-helmet-async';
 import firebase from '../firebase.js'
 import poster_duhuruvam from '../Images/poster_dhuruvam.jpg'
-import '../Stylesheets/dhuruvam.css'
+
 
 import { Card, Col, Row,Button,Spin } from 'antd';
 const { Meta } = Card;
@@ -52,15 +52,16 @@ console.log(loading)
           <Spin tip="ஏற்றுகிறது ..." style={{width:1550}} size="large" spinning={loading}>
           
           </Spin>&nbsp;
-          <h2 className="poster_title">சுவரொட்டி</h2>
           <center>
+              <h2>சுவரொட்டி</h2>
                 <img 
                 style={{ width: 650 , height:400 }}
-                src={ poster_duhuruvam } alt="poster"/>
-          </center><br/><hr/><br/>
+                src={poster_duhuruvam } alt="poster"/>
+          </center><br/><br/><hr/>
           <Row gutter={0}>
                         {events.map((event) =>(
-                            <div key={event.key}> 
+                            <div key={event.key}>
+                                
                                 <Col span={1}>
                                 <Card
                                         className="card-item"
@@ -69,7 +70,8 @@ console.log(loading)
                                         <img
                                             alt="example"
                                             src={event.img}
-                                            height={200}                      
+                                            height={200}
+                                           
                                         />
                                 }>
                                 <Meta
@@ -89,5 +91,5 @@ console.log(loading)
     )
 }
 
-export default Dhuruvam;
+export default Dhuruvam
 

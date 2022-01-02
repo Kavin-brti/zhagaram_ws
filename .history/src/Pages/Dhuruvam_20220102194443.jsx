@@ -2,7 +2,7 @@ import React , {useState,useEffect} from 'react'
 import { Helmet,HelmetProvider } from 'react-helmet-async';
 import firebase from '../firebase.js'
 import poster_duhuruvam from '../Images/poster_dhuruvam.jpg'
-import '../Stylesheets/dhuruvam.css'
+
 
 import { Card, Col, Row,Button,Spin } from 'antd';
 const { Meta } = Card;
@@ -52,8 +52,8 @@ console.log(loading)
           <Spin tip="ஏற்றுகிறது ..." style={{width:1550}} size="large" spinning={loading}>
           
           </Spin>&nbsp;
-          <h2 className="poster_title">சுவரொட்டி</h2>
           <center>
+              <h2>சுவரொட்டி</h2>
                 <img 
                 style={{ width: 650 , height:400 }}
                 src={ poster_duhuruvam } alt="poster"/>

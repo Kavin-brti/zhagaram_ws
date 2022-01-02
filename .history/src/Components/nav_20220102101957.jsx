@@ -9,22 +9,22 @@ const Nav = () => {
     const menu=(
                     <Menu>
                             <Menu.Item>
-                                <a style={{color:"black"}} href="/pongal">
+                                <a className="dd" href="/pongal">
                                 பொங்கல் 
                                 </a>
                             </Menu.Item>
                             <Menu.Item>
-                                <a style={{color:"black"}} href="/dhuruvam">
+                                <a className="dd" href="/dhuruvam">
                                 துருவம் 
                                 </a>
                             </Menu.Item>
                             <Menu.Item>
-                                <a style={{color:"black"}} href="/yaazh">
+                                <a className="dd" href="/yaazh">
                                 யாழ் 
                                 </a>
                             </Menu.Item>
                             <Menu.Item>
-                                <a  style={{color:"black"}} href="/vidhai">
+                                <a  className="dd" href="/vidhai">
                                 விதை
                                 </a>
                             </Menu.Item>

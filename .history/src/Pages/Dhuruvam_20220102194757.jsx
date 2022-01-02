@@ -52,8 +52,8 @@ console.log(loading)
           <Spin tip="ஏற்றுகிறது ..." style={{width:1550}} size="large" spinning={loading}>
           
           </Spin>&nbsp;
-          <h2 className="poster_title">சுவரொட்டி</h2>
           <center>
+              <h2 className="poster_title">சுவரொட்டி</h2>
                 <img 
                 style={{ width: 650 , height:400 }}
                 src={ poster_duhuruvam } alt="poster"/>

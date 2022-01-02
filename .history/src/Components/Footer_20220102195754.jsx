@@ -14,9 +14,9 @@ const Footer = () => {
                 </center>
                 <ul className="frontend">
                     <span>உருவாக்கம் </span><br/>
-                    <li> <b>கவின்பாரதி  ஆ , மைதிலி இ</b></li><br/>
+                    <li> <b>கவின்பாரதி  ஆ , மைதிலி  இ</b></li><br/>
                     <span>இணையதள வடிவமைப்பு </span><br/>
-                    <li><b>  ஜனனி நா , தர்ஷினி த சா</b></li><br/>
+                    <li><b> தர்ஷினி த சா , ஜனனி நா</b></li><br/>
                 </ul>
                 <ul className="backend">
                     <span>சுவரொட்டி / புகைப்பட வடிவமைப்பு </span><br/>

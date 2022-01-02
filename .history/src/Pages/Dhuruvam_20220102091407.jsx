@@ -1,10 +1,10 @@
 import React , {useState,useEffect} from 'react'
 import { Helmet,HelmetProvider } from 'react-helmet-async';
 import firebase from '../firebase.js'
-import poster_duhuruvam from '../Images/poster_dhuruvam.jpg'
-import '../Stylesheets/dhuruvam.css'
 
-import { Card, Col, Row,Button,Spin } from 'antd';
+
+
+import { Card, Col, Row,Button } from 'antd';
 const { Meta } = Card;
 const Dhuruvam=()=> {
     const [events, setEvents] = useState([]);
@@ -16,25 +16,25 @@ const Dhuruvam=()=> {
     useEffect(()=>{
           // //ONE TIME GET FUNCTION
     const ref = firebase.firestore().collection("Dhuruvam");
-    setLoading(true);
     function getEvents() {
+        console.log("loading"+loading)
+        setLoading(true);
+        console.log("setloading"+loading)
         ref.onSnapshot((querySnapshot)=>{
             const items = [];
             querySnapshot.forEach((doc)=>{
                 items.push(doc.data());
             });
-        setLoading(false);
         setEvents(items);
+        setLoading(false);
         });
     }
-  
         getEvents();
     },[]);
 
-console.log(loading)
+
     if(loading){
-        <h1>Loading</h1>
-   
+        <h1>Loading.....</h1>
     }
     return (
         <div>
@@ -49,18 +49,11 @@ console.log(loading)
            </div>
           
           <div className="site-card-wrapper">
-          <Spin tip="ஏற்றுகிறது ..." style={{width:1550}} size="large" spinning={loading}>
-          
-          </Spin>&nbsp;
-          <h2 className="poster_title">சுவரொட்டி</h2>
-          <center>
-                <img 
-                style={{ width: 650 , height:400 }}
-                src={ poster_duhuruvam } alt="poster"/>
-          </center><br/><hr/><br/>
+               
           <Row gutter={0}>
                         {events.map((event) =>(
-                            <div key={event.key}> 
+                            <div key={event.key}>
+                                
                                 <Col span={1}>
                                 <Card
                                         className="card-item"
@@ -69,7 +62,8 @@ console.log(loading)
                                         <img
                                             alt="example"
                                             src={event.img}
-                                            height={200}                      
+                                            height={200}
+                                           
                                         />
                                 }>
                                 <Meta
@@ -89,5 +83,5 @@ console.log(loading)
     )
 }
 
-export default Dhuruvam;
+export default Dhuruvam
 
